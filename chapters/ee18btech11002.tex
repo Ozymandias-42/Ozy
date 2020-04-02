@@ -1,14 +1,14 @@
-\documentclass{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{graphicx}
+\item
+%\documentclass{beamer}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsthm}
+%\usepackage{amsmath}
+%\usepackage{graphicx}
 %\usetheme{Madrid}
 %\title{Control Systems (EE2227)}
 %\author{Abhishek}
 %\institute{IIT Hyderabad}
-
-\begin{document}
+%\begin{document}
 %\frame{\titlepage}
 %\begin{frame}{Question}
 %Consider the following second order system with the transfer function:
@@ -29,9 +29,14 @@
 %\end{frame}
 %\begin{frame}{Finding C(s)}
 %We are given G(s) and R(s), to find C(s), we can simply multiply these two
-$C(s) = R(s).G(s) = (\frac{1}{s})  (\frac{1}{1+2s+s^2})$
 
-$C(s) =  \frac{1}{s(1+s)^2}$
+\begin{multline}
+C(s) = R(s).G(s) = (\frac{1}{s})  (\frac{1}{1+2s+s^2})
+\end{multline}
+
+\begin{multline}
+C(s) =  \frac{1}{s(1+s)^2}
+\end{multline}
 
 %\end{frame}
 %\begin{frame}{Finding c(t)}
@@ -46,8 +51,11 @@ $C(s) =  \frac{1}{s(1+s)^2}$
     
 %\end{frame}
 %\begin{frame}{Finding c(t)}
-We found C(s) as:
-$C(s) =  \frac{1}{s(1+s)^2}$
+
+\textsf{We found C(s) as:}
+\begin{multline}
+C(s) =  \frac{1}{s(1+s)^2}
+\end{multline}
 %Now, we will use partial fractions to make applying Inverse Laplace easy.
 %$$C(s) =  \frac{1}{s(1+s)^2} =  \frac{A}{s} + \frac{B}{(1+s)} + \frac{C}{(1+s)^2}$$
 %We get, 
@@ -55,42 +63,55 @@ $C(s) =  \frac{1}{s(1+s)^2}$
 %A &= 1 & A+B &=0 & 2A+B+C &= 0 \\
 %A &=1 & B &=-1 & C &=-1
 %\end{align*}
-
-Therefore,
-$C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}$
+\textsf{Therefore,}
+\begin{multline}
+C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
+\end{multline}
 %\end{frame}
 %\begin{frame}{Inverse Laplace}
 %$$c(t) = L^{-1} ( \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}) $$
 %From the properties of inverse Laplace transform,
 %$$L^{-1} (F_1(s) + F_2(s) + F_3(s)) = L^{-1}(F_1(s)) + L^{-1}(F_2(s)) + L^{-1}(F_3(s))$$
 
-Therefore;
-$c(t) = L^{-1} ( \frac{1}{s}) - L^{-1}(\frac{1}{(1+s)}) - L^{-1}(\frac{1}{(1+s)^2}) $
+\textsf{Therefore;}
+\begin{multline}
+c(t) = L^{-1} ( \frac{1}{s}) - L^{-1}(\frac{1}{(1+s)}) - L^{-1}(\frac{1}{(1+s)^2}) 
+\end{multline}
 
-Using the Known inverse transforms:
-$c(t) = (1 - e^{-t} - te^{-t}) . u(t)$
-
+\textsf{Using the Known inverse transforms:}
+\begin{multline}
+c(t) = (1 - e^{-t} - te^{-t}) . u(t)
+\end{multline}
 
 %\end{frame}
 %\begin{frame}{Finding the time for reaching 94\%}
 
-To know the steady state value of c(t), we calculate 
-$\lim_{t\to\infty} c(t) = (1+0+0).(1) = 1$
 
-Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that
-$(1 - e^{-t} - te^{-t}) = 0.94$
+\textsf{To know the steady state value of c(t), we calculate }
+\begin{multline}
+\lim_{t\to\infty} c(t) = (1+0+0).(1) = 1
+\end{multline}
+
+\textsf{Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that}
+\begin{multline}
+(1 - e^{-t} - te^{-t}) = 0.94
+\end{multline}
 %the attached code gives us the solution for the equation
 %and t turns out to be
-
-$ t = 4.5228$
+\begin{multline}
+ t = 4.5228
+\end{multline}
 %Therefore, answer is option (b)
 %\end{frame}
 %\begin{frame}{Plot}
 %We can verify the solution by plotting c(t):
+\begin{figure}
 \includegraphics[scale=0.65]{./../figs/plot.png}
+
+\end{figure}
 %\end{frame}    
 %\begin{frame}{}
  % \centering \Large
  % \emph{THANK YOU}
 %\end{frame}
-\end{document}
+%\end{document}
