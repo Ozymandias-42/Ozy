@@ -38,6 +38,10 @@ R(s) = \frac{1}{s}
 
 \textbf{Solution:}
 \begin{multline}
+G(s) = (\frac{1}{1+2s+s^2})
+\end{multline}
+From given expression of G(s),both poles of G(s) are at (-1,0) which is on the left half of s-plane, therefore we can conclude that the system is stable.
+\begin{multline}
 C(s) = R(s).G(s) = (\frac{1}{s})  (\frac{1}{1+2s+s^2})
 \end{multline}
 
@@ -74,6 +78,7 @@ Therefore,
 \begin{multline}
 C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
 \end{multline}
+
 %\end{frame}
 %\begin{frame}{Inverse Laplace}
 %$$c(t) = L^{-1} ( \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}) $$
@@ -113,7 +118,7 @@ Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that
 %\begin{frame}{Plot}
 %We can verify the solution by plotting c(t):
 \begin{figure}
-\includegraphics[scale=0.65]{./figs/plot.png}
+\includegraphics[scale=0.65]{./figs/ee18btech11002.eps}
 
 \end{figure}
 %\end{frame}    
