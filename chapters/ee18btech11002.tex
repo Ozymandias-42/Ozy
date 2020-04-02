@@ -11,9 +11,15 @@
 %\begin{document}
 %\frame{\titlepage}
 %\begin{frame}{Question}
-%Consider the following second order system with the transfer function:
-%$$G(s) = \frac{1}{1+2s+s^2}$$
-%\\with input unit step $$R(s) = \frac{1}{s}$$  Let C(s) be the corresponding output. The time taken by the system output c(t) to reach 94\% of its steady state value, rounded off to two decimal places is
+Consider the following second order system with the transfer function:
+\begin{multline}
+G(s) = \frac{1}{1+2s+s^2}
+\end{multline}
+with input unit step 
+\begin{multline}
+R(s) = \frac{1}{s}
+\end{multline}
+ Let C(s) be the corresponding output. The time taken by the system output c(t) to reach 94\% of its steady state value, rounded off to two decimal places is
 %\medskip
 %\\ \hspace{20}(A)5.25\hspace{20}(B)4.50 \hspace{20}(C)3.89  \hspace{20}(D)2.81
 
@@ -30,6 +36,7 @@
 %\begin{frame}{Finding C(s)}
 %We are given G(s) and R(s), to find C(s), we can simply multiply these two
 
+\textbf{Solution:}
 \begin{multline}
 C(s) = R(s).G(s) = (\frac{1}{s})  (\frac{1}{1+2s+s^2})
 \end{multline}
@@ -106,7 +113,7 @@ Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that
 %\begin{frame}{Plot}
 %We can verify the solution by plotting c(t):
 \begin{figure}
-\includegraphics[scale=0.65]{./../figs/plot.png}
+\includegraphics[scale=0.65]{./figs/plot.png}
 
 \end{figure}
 %\end{frame}    
