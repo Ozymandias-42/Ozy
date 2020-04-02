@@ -52,7 +52,7 @@ C(s) =  \frac{1}{s(1+s)^2}
 %\end{frame}
 %\begin{frame}{Finding c(t)}
 
-\textsf{We found C(s) as:}
+We found C(s) as:
 \begin{multline}
 C(s) =  \frac{1}{s(1+s)^2}
 \end{multline}
@@ -63,7 +63,7 @@ C(s) =  \frac{1}{s(1+s)^2}
 %A &= 1 & A+B &=0 & 2A+B+C &= 0 \\
 %A &=1 & B &=-1 & C &=-1
 %\end{align*}
-\textsf{Therefore,}
+Therefore,
 \begin{multline}
 C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
 \end{multline}
@@ -73,12 +73,12 @@ C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
 %From the properties of inverse Laplace transform,
 %$$L^{-1} (F_1(s) + F_2(s) + F_3(s)) = L^{-1}(F_1(s)) + L^{-1}(F_2(s)) + L^{-1}(F_3(s))$$
 
-\textsf{Therefore;}
+Therefore;
 \begin{multline}
 c(t) = L^{-1} ( \frac{1}{s}) - L^{-1}(\frac{1}{(1+s)}) - L^{-1}(\frac{1}{(1+s)^2}) 
 \end{multline}
 
-\textsf{Using the Known inverse transforms:}
+Using the Known inverse transforms:
 \begin{multline}
 c(t) = (1 - e^{-t} - te^{-t}) . u(t)
 \end{multline}
@@ -87,12 +87,12 @@ c(t) = (1 - e^{-t} - te^{-t}) . u(t)
 %\begin{frame}{Finding the time for reaching 94\%}
 
 
-\textsf{To know the steady state value of c(t), we calculate }
+To know the steady state value of c(t), we calculate 
 \begin{multline}
 \lim_{t\to\infty} c(t) = (1+0+0).(1) = 1
 \end{multline}
 
-\textsf{Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that}
+Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that
 \begin{multline}
 (1 - e^{-t} - te^{-t}) = 0.94
 \end{multline}
